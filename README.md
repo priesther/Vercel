@@ -6,7 +6,7 @@
 
 有很多种思路，如下提供两种
 
-## bunnyCDN
+## bunnyCDN（也许好像大概是寄了，但是思路没问题，你可以使用任意CDN实现目标，包括国内的CDN提供商）
 
 直接给cwm套个CDN不就得了
 
@@ -20,7 +20,7 @@ https://bunny.net/
 
 > 注意，禁止以/结尾，`https://ciweimao.b-cdn.net/` 应在设置中写 `https://ciweimao.b-cdn.net`
 
-## Vercel
+## Vercel（最好开个新号）
 
 1、[Fork这个仓库](https://github.com/KoronekoCorp/M/fork)
 
@@ -53,3 +53,17 @@ https://bunny.net/
 > 注意，禁止以/结尾，`https://m-doia.vercel.app/` 应在设置中写 `https://m-doia.vercel.app`
 
 ![Vercel Domain](./asset/230030.jpg)
+
+### 更多设置，修改请求地区
+
+如果你发现你的代理IP寄了，就需要修改你代理的执行地区，
+
+> settings -> functions -> Function Region
+
+![image](https://github.com/user-attachments/assets/bf95bd54-2d09-408e-aa5f-ed3490cfc171)
+
+修改完成之后可能需要重新部署一次，我也不确定，好像没怎么用了，点击图中的redeploy
+
+![image](https://github.com/user-attachments/assets/85af615b-2185-4fe6-8352-0ab3c0fe8b6d)
+
+### 更多东西，你可以在部署完成之后把你的仓库直接删了，防止你的代理服务被公开，代理服务不会被一同删除
